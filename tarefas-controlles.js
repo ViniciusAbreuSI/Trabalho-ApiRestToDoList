@@ -25,5 +25,32 @@ exports.cadastrarTarefa = (req, res) => {
       return next(err);
     }
   });
-  res.send("tarefa cadastrada com sucesso");
+  res.send("Tarefa cadastrada com sucesso!");
+};
+
+exports.removerTarefa = (req, res) => {
+  Tarefas.findByIdAndRemove(req.params.id, function (err, tarefa) {
+    if (err) next(err);
+    res.send("Tarefa removida com sucesso!");
+  });
+};
+
+exports.alterarTarefa = (req, res) => {
+  let tarefa = new Tarefas({
+    descricao: req.body.descricao,
+    prazo: req.body.prazo,
+    completa: req.body.completa,
+  });
+  Tarefas.findByIdAndUpdate(
+    req.params.id,
+    {
+      descricao: tarefa.descricao,
+      prazo: tarefa.prazo,
+      completa: tarefa.completa,
+    },
+    function (err, docs) {
+      if (err) next(err);
+      res.send("Tarefa atualizada com sucesso!");
+    }
+  );
 };

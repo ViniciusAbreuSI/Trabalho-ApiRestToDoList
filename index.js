@@ -29,6 +29,8 @@ app.get("/", (req, res) => {
 router.post('/tarefas', tarefas_controller.cadastrarTarefa);
 router.get('/tarefas', tarefas_controller.listarTarefas);
 router.get('/tarefas/:id', tarefas_controller.buscarTarefa);
+router.delete('/tarefas/:id', tarefas_controller.removerTarefa);
+router.put('/tarefas/:id', tarefas_controller.alterarTarefa);
 app.use('/', router);
 
 let porta = process.env.PORT || 3000;
