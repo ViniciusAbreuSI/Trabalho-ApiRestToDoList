@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 
-const tarefas_controller = require("./tarefas-controlles");
+const tarefas_controller = require("./tarefas-controller");
 
 mongoose.connect(
   "mongodb+srv://usuariopadrao:4KH5pFdL9W7IPoW8@cluster0.ionhwbm.mongodb.net/?retryWrites=true&w=majority",
