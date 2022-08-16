@@ -4,7 +4,7 @@
 #### Professor: Neumar Costa Malheiros
 Alunos: Lucas Silvério e Vinicius Abreu
 
-Para executar o código é necessária a instalação das dependências utilizando o gerenciador de pacotes de sua preferência:
+Para executar o código é necessário a instalação das dependências utilizando o gerenciador de pacotes de sua preferência:
 - npm install
 - yarn
 
