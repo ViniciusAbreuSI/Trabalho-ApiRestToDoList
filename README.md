@@ -14,8 +14,10 @@ Após a instalação, é necessário também que se tenha o nodemon instalado na
 
 Agora que o ambiente está preparado, basta executar:
 - nodemon index.js
-##### E a aplicação estará online no localhost:3000.
-##### Caso a porta 3000 esteja ocupada, basta ir à linha 36 do index.js e alterar a porta em questão.
+
+E a aplicação estará online no localhost:3000.
+
+Caso a porta 3000 esteja ocupada, basta ir à linha 36 do index.js e alterar a porta em questão.
 
 A aplicação também está online no servidor: https://ws-apiresttodolist.herokuapp.com/
 
